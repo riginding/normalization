@@ -7,18 +7,18 @@
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="./reveal.js/css/reveal.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
 
-<link rel="stylesheet" href="./reveal.js/css/theme/moon.css" id="theme"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/moon.css" id="theme"/>
 
-<link rel="stylesheet" href="./reveal.js/lib/css/zenburn.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/css/zenburn.css"/>
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
     if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = './reveal.js/css/print/pdf.css';
+        link.href = 'https://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
@@ -28,13 +28,13 @@
 <div class="slides">
 
 <section>
-<section id="slide-orgd6b85f2">
-<h2 id="orgd6b85f2">Normalization Learnings</h2>
+<section id="slide-org3685df0">
+<h2 id="org3685df0">Normalization Learnings</h2>
 </section>
 </section>
 <section>
-<section id="slide-orgce2ceeb">
-<h2 id="orgce2ceeb">Project Aareal Bank</h2>
+<section id="slide-org917d493">
+<h2 id="org917d493">Project Aareal Bank</h2>
 <ul>
 <li>Deal</li>
 <li>Phases</li>
@@ -46,8 +46,8 @@
 </section>
 </section>
 <section>
-<section id="slide-org4f0e6d1">
-<h2 id="org4f0e6d1">Problems</h2>
+<section id="slide-orgfbe64cf">
+<h2 id="orgfbe64cf">Problems</h2>
 <ul>
 <li>one main request has a big payload</li>
 <li>very slow TTFB</li>
@@ -57,52 +57,52 @@
 </section>
 </section>
 <section>
-<section id="slide-org57951e4">
-<h2 id="org57951e4">Old app</h2>
+<section id="slide-orgcff8cab">
+<h2 id="orgcff8cab">Old app</h2>
 <img alt="performance of aareal bank before" height="auto" id="aareal-old" src="./old.gif">
 </section>
 </section>
 <section>
-<section id="slide-orgf1f0787">
-<h2 id="orgf1f0787">New app</h2>
+<section id="slide-orgee8ce28">
+<h2 id="orgee8ce28">New app</h2>
 <img alt="performance of aareal bank after" height="auto" id="aareal-new" src="./new.gif">
 </section>
 </section>
 <section>
-<section id="slide-org2478c61">
-<h2 id="org2478c61">How did it worked before</h2>
+<section id="slide-org9f1cdc1">
+<h2 id="org9f1cdc1">How did it worked before</h2>
 <img alt="performance of aareal bank before" height="auto" id="aareal-old" src="./oldway.png">
 </section>
 </section>
 <section>
-<section id="slide-orgfa323b6">
-<h2 id="orgfa323b6">How it works now</h2>
+<section id="slide-org6b521aa">
+<h2 id="org6b521aa">How it works now</h2>
 <img alt="performance of aareal bank before" height="auto" id="aareal-old" src="./newway.png">
 
 </section>
 </section>
 <section>
-<section id="slide-org7408ace">
-<h2 id="org7408ace">Old Store</h2>
+<section id="slide-org6f21fd7">
+<h2 id="org6f21fd7">Old Store</h2>
 <img alt="performance of aareal bank before" height="auto" id="aareal-old" src="./denormalized_store.png">
 
 </section>
 </section>
 <section>
-<section id="slide-orgd7329e1">
-<h2 id="orgd7329e1">New Store</h2>
+<section id="slide-org9d830f9">
+<h2 id="org9d830f9">New Store</h2>
 <img alt="performance of aareal bank before" height="auto" id="aareal-old" src="./normalized_store.png">
 
 </section>
 </section>
 <section>
-<section id="slide-org7156ba7">
-<h2 id="org7156ba7">Lets look at Code</h2>
+<section id="slide-org6d93d42">
+<h2 id="org6d93d42">Lets look at Code</h2>
 </section>
 </section>
 <section>
-<section id="slide-org44fea41">
-<h2 id="org44fea41">Pros</h2>
+<section id="slide-orgddb64e9">
+<h2 id="orgddb64e9">Pros</h2>
 <ul>
 <li>easier to update one specific entity</li>
 <li>caching built in</li>
@@ -114,8 +114,8 @@
 </section>
 </section>
 <section>
-<section id="slide-orge58cdce">
-<h2 id="orge58cdce">Cons</h2>
+<section id="slide-orgc602601">
+<h2 id="orgc602601">Cons</h2>
 <ul>
 <li>more boilerplate, harder to start project</li>
 <li>higher memory consumption</li>
@@ -126,8 +126,8 @@
 </section>
 </section>
 <section>
-<section id="slide-org28d7bda">
-<h2 id="org28d7bda">Learnings</h2>
+<section id="slide-orgeef619b">
+<h2 id="orgeef619b">Learnings</h2>
 <ul>
 <li>keep more attention to balazs 'new hot stuff'</li>
 <li>normalization has no performance penalties if used appropriately</li>
@@ -138,8 +138,8 @@
 </section>
 </div>
 </div>
-<script src="./reveal.js/lib/js/head.min.js"></script>
-<script src="./reveal.js/js/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
 
 <script>
 // Full list of configuration options available here:
@@ -166,8 +166,8 @@ multiplex: {
 
 // Optional libraries used to extend on reveal.js
 dependencies: [
- { src: './reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
- { src: './reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+ { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
 });
 </script>
 </body>

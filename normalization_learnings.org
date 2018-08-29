@@ -1,4 +1,5 @@
 #+OPTIONS: reveal_title_slide:nil num:nil toc:nil
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
 #+REVEAL_PLUGINS: (highlight notes)
 #+REVEAL_HLEVEL: 2
 #+REVEAL_TRANS: none
